@@ -5,28 +5,35 @@ const _nav =  [
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
-    to: '/dashboard',
+    to: '/pakistan/dashboard',
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    }
+
   },
+
   {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Theme']
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Colors',
-    to: '/theme/colors',
-    icon: 'cil-drop',
-  },
-  {
-    _tag: 'CSidebarNavItem',
-    name: 'Typography',
-    to: '/theme/typography',
-    icon: 'cil-pencil',
+    _tag: 'CSidebarNavDropdown',
+    name: 'Users',
+    icon: 'cil-user',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Doctor',
+        to: '/pakistan/doctors',
+        icon: 'cil-user',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Patients',
+        to: '/pakistan/patient',
+        icon: 'cil-user',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'Rider',
+        to: '/pakistan/rider',
+        icon: 'cil-user',
+      }
+      ]
   },
   {
     _tag: 'CSidebarNavTitle',
@@ -35,135 +42,135 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Base',
-    route: '/base',
+    route: '/pakistan/base',
     icon: 'cil-puzzle',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Breadcrumb',
-        to: '/base/breadcrumbs',
+        to: '/pakistan/base/breadcrumbs',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Cards',
-        to: '/base/cards',
+        to: '/pakistan/base/cards',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Carousel',
-        to: '/base/carousels',
+        to: '/pakistan/base/carousels',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Collapse',
-        to: '/base/collapses',
+        to: '/pakistan/base/collapses',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Forms',
-        to: '/base/forms',
+        to: '/pakistan/base/forms',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Jumbotron',
-        to: '/base/jumbotrons',
+        to: '/pakistan/base/jumbotrons',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'List group',
-        to: '/base/list-groups',
+        to: '/pakistan/base/list-groups',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Navs',
-        to: '/base/navs',
+        to: '/pakistan/base/navs',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Navbars',
-        to: '/base/navbars',
+        to: '/pakistan/base/navbars',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Pagination',
-        to: '/base/paginations',
+        to: '/pakistan/base/paginations',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Popovers',
-        to: '/base/popovers',
+        to: '/pakistan/base/popovers',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Progress',
-        to: '/base/progress-bar',
+        to: '/pakistan/base/progress-bar',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Switches',
-        to: '/base/switches',
+        to: '/pakistan/base/switches',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Tables',
-        to: '/base/tables',
+        to: '/pakistan/base/tables',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Tabs',
-        to: '/base/tabs',
+        to: '/pakistan/base/tabs',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Tooltips',
-        to: '/base/tooltips',
+        to: '/pakistan/base/tooltips',
       },
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Buttons',
-    route: '/buttons',
+    route: '/pakistan/buttons',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Buttons',
-        to: '/buttons/buttons',
+        to: '/pakistan/buttons/buttons',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Brand buttons',
-        to: '/buttons/brand-buttons',
+        to: '/pakistan/buttons/brand-buttons',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Buttons groups',
-        to: '/buttons/button-groups',
+        to: '/pakistan/buttons/button-groups',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Dropdowns',
-        to: '/buttons/button-dropdowns',
+        to: '/pakistan/buttons/button-dropdowns',
       }
     ],
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Charts',
-    to: '/charts',
+    to: '/pakistan/charts',
     icon: 'cil-chart-pie'
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Icons',
-    route: '/icons',
+    route: '/pakistan/icons',
     icon: 'cil-star',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'CoreUI Free',
-        to: '/icons/coreui-icons',
+        to: '/pakistan/icons/coreui-icons',
         badge: {
           color: 'success',
           text: 'NEW',
@@ -172,47 +179,47 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'CoreUI Flags',
-        to: '/icons/flags',
+        to: '/pakistan/icons/flags',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'CoreUI Brands',
-        to: '/icons/brands',
+        to: '/pakistan/icons/brands',
       },
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'Notifications',
-    route: '/notifications',
+    route: '/pakistan/notifications',
     icon: 'cil-bell',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'Alerts',
-        to: '/notifications/alerts',
+        to: '/pakistan/notifications/alerts',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Badges',
-        to: '/notifications/badges',
+        to: '/pakistan/notifications/badges',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Modal',
-        to: '/notifications/modals',
+        to: '/pakistan/notifications/modals',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Toaster',
-        to: '/notifications/toaster'
+        to: '/pakistan/notifications/toaster'
       }
     ]
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Widgets',
-    to: '/widgets',
+    to: '/pakistan/widgets',
     icon: 'cil-calculator',
     badge: {
       color: 'info',
@@ -235,22 +242,22 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: 'Login',
-        to: '/login',
+        to: '/pakistan/login',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Register',
-        to: '/register',
+        to: '/pakistan/register',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Error 404',
-        to: '/404',
+        to: '/pakistan/404',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'Error 500',
-        to: '/500',
+        to: '/pakistan/500',
       },
     ],
   },

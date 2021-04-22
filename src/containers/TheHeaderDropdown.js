@@ -8,6 +8,7 @@ import {
   CImg
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
+import avatar from 'src/avatars/6.jpg'
 
 const TheHeaderDropdown = () => {
   return (
@@ -19,7 +20,7 @@ const TheHeaderDropdown = () => {
       <CDropdownToggle className="c-header-nav-link" caret={false}>
         <div className="c-avatar">
           <CImg
-            src={'avatars/6.jpg'}
+            src={avatar}
             className="c-avatar-img"
             alt="admin@bootstrapmaster.com"
           />
@@ -82,7 +83,7 @@ const TheHeaderDropdown = () => {
         <CDropdownItem divider />
         <CDropdownItem>
           <CIcon name="cil-lock-locked" className="mfe-2" />
-          Lock Account
+          Log Out
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>
