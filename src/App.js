@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './scss/style.scss';
 
 const loading = (
@@ -22,8 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter basename='/index.html'>
-          <React.Suspense fallback={loading}>
+      <Router basename='/'>
             <Switch>
               <Route exact path="/login" name="Login Page" render={props => <Login {...props}/>} />
               <Route exact path="/register" name="Register Page" render={props => <Register {...props}/>} />
@@ -31,8 +30,7 @@ class App extends Component {
               <Route exact path="/500" name="Page 500" render={props => <Page500 {...props}/>} />
               <Route  path="/" name="The Layout" render={props => <TheLayout {...props}/>} />
             </Switch>
-          </React.Suspense>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
