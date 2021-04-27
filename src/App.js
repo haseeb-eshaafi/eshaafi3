@@ -22,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename='/'>
+      <Router basename='/index.html'>
             <Switch>
               <Route exact path="/login" name="Login Page" render={props => <Login {...props}/>} />
               <Route exact path="/register" name="Register Page" render={props => <Register {...props}/>} />
