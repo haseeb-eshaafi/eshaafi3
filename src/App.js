@@ -2,16 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './scss/style.scss';
 
-const loading = (
-  <div className="pt-3 text-center">
-    <div className="sk-spinner sk-spinner-pulse"></div>
-  </div>
-)
 
 
 
 // Pages
-const Login = React.lazy(() => import('./views/pages/login/Login'));
+import Login from './views/pages/login/Login';
 
 
 class App extends Component {
@@ -19,11 +14,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-          <React.Suspense fallback={loading}>
             <Switch>
               <Route exact path="/" name="Login Page" render={props => <Login {...props}/>} />
             </Switch>
-          </React.Suspense>
       </BrowserRouter>
     );
   }
